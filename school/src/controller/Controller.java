@@ -1,4 +1,8 @@
-package Schoo_manager;
+package controller;
+
+import util.Utils;
+import dao.StudentDAO;
+import dao.SubjectDAO;
 
 public class Controller {
 	private StudentDAO stuDAO;

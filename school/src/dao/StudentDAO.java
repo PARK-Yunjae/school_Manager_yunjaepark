@@ -1,6 +1,9 @@
-package Schoo_manager;
+package dao;
 
 import java.util.ArrayList;
+
+import util.Utils;
+import vo.Student;
 
 public class StudentDAO {
 	private ArrayList<Student> stuList;
@@ -160,12 +163,12 @@ public class StudentDAO {
 			data += stuList.get(i).saveData();
 		}
 		data = data.substring(0, data.length() - 1);
-
 		return data;
 	}
 
 	// 파일 불러오기
 	public void fileToData(String data) {
+		stuList.clear();
 		if(data.length() == 0) return;
 		String[] datas = data.split("\n");
 		for (int i = 0; i < datas.length; i += 1) {

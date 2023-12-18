@@ -1,4 +1,4 @@
-package Schoo_manager;
+package vo;
 
 public class Subject {
 	private int stuNo;

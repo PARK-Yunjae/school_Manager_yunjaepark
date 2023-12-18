@@ -1,7 +1,10 @@
-package Schoo_manager;
+package dao;
 
 import java.util.ArrayList;
 import java.util.Random;
+import vo.Subject;
+import vo.Student;
+import util.Utils;
 
 public class SubjectDAO {
 	private ArrayList<Subject> subList;
@@ -122,12 +125,12 @@ public class SubjectDAO {
 			data += subList.get(i).saveData();
 		}
 		data = data.substring(0, data.length() - 1);
-		System.out.println();
 		return data;
 	}
 
 	// 파일 불러오기
 	public void fileToData(String data) {
+		subList.clear();
 		if(data.length() == 0) return;
 		String[] datas = data.split("\n");
 		for (int i = 0; i < datas.length; i += 1) {

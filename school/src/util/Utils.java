@@ -1,4 +1,4 @@
-package Schoo_manager;
+package util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
