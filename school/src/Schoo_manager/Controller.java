@@ -1,4 +1,4 @@
-package School_박윤재_스태틱;
+package Schoo_manager;
 
 public class Controller {
 	private StudentDAO stuDAO;
